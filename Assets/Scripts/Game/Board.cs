@@ -17,8 +17,9 @@ namespace Game
     public class Board
     {
         public const int c_boardSize = 3;
+        public const int c_tileCount = c_boardSize * c_boardSize;
 
-        private BoardState[] m_tileStates = new BoardState[c_boardSize * c_boardSize];
+        private BoardState[] m_tileStates = new BoardState[ c_tileCount ];
 
         public Board() 
         {
